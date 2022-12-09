@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPGA Calculator</title>
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoHzqTaPXUyGclcs8UVMyVbnLeIY05lWqBxYqSgJGS&s">
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body onload="sam()">
+   <h1 class="head">Welcome to CGPA Calculator🤩 Regulation_2020</h1>
+   <div class="box1">
+    <h2>Semester 1</h2>
+    <div class="sem">
+        Technical English-I (20EN151) 
+        <select id="sub1"onchange="sam()">
+            <option>O</option>
+        <option>A+</option>
+        <option>A</option>
+        <option>B+</option>
+        <option>B</option>
+        <option>RA-F</option>
+        </select>
+        <br>
+        
+        Engineering Mathematics-I (20MA151)
+        <select  id="sub2"onchange="sam()">
+            <option>O</option>
+        <option>A+</option>
+        <option>A</option>
+        <option>B+</option>
+        <option>B</option>
+        <option>RA-F</option>
+        </select>
+        <br>
+
+       Engineering Physics (20PH051) 
+        <select  id="sub3"onchange="sam()">
+            <option>O</option>
+        <option>A+</option>
+        <option>A</option>
+        <option>B+</option>
+        <option>B</option>
+        <option>RA-F</option>
+        </select>
+        <br>
+
+       PPS (20CS141) 
+        <select  id="sub4"onchange="sam()">
+        <option>O</option>
+        <option>A+</option>
+        <option>A</option>
+        <option>B+</option>
+        <option>B</option>
+        <option>RA-F</option>
+        </select>
+        <br>
+
+       EG Laboratory (20AU127) 
+        <select id="sub5"onchange="sam()">
+            <option>O</option>
+        <option>A+</option>
+        <option>A</option>
+        <option>B+</option>
+        <option>B</option>
+        <option>RA-F</option>
+        </select>
+        <br>
+
+        Physics Laboratory (20PH028) 
+        <select  id="sub6"onchange="sam()">
+            <option>O</option>
+        <option>A+</option>
+        <option>A</option>
+        <option>B+</option>
+        <option>B</option>
+        <option>RA-F</option>
+        </select>
+        <br>
+
+        PPS Laboratory (20CS127) 
+        <select  id="sub7"onchange="sam()">
+            <option>O</option>
+        <option>A+</option>
+        <option>A</option>
+        <option>B+</option>
+        <option>B</option>
+        <option>RA-F</option>
+        </select>
+        <br>
+
+        Induction Programme (20MC151) 
+        <select id="sub8"onchange="sam()">
+            <option>O</option>
+        <option>A+</option>
+        <option>A</option>
+        <option>B+</option>
+        <option>B</option>
+        <option>RA-F</option>
+        </select>
+        <br>
+
+        EVS (20MC052) 
+        <select id="sub9"onchange="sam()">
+            <option>O</option>
+        <option>A+</option>
+        <option>A</option>
+        <option>B+</option>
+        <option>B</option>
+        <option>RA-F</option>
+        </select>
+        <br>
+    </div>
+    <h3 id="res1">SGPA:</h3>
+    <h3 id="cgpa1">CGPA:</h3>
+   </div>
+   <br><br><br>
+   <div class="box2">
+    <h2>Semester 2</h2>
+    <div class="sem">
+        Technical English-II (20EN251) 
+        <select  id="sub10"onchange="sam()">
+            <option>O</option>
+        <option>A+</option>
+        <option>A</option>
+        <option>B+</option>
+        <option>B</option>
+        <option>RA-F</option>
+        </select>
+        <br>
+        
+        Applied Mathematics (20MA242)
+        <select  id="sub11"onchange="sam()">
+            <option>O</option>
+        <option>A+</option>
+        <option>A</option>
+        <option>B+</option>
+        <option>B</option>
+        <option>RA-F</option>
+        </select>
+        <br>
+
+       Engineering Chemistry (20CH051) 
+        <select  id="sub12"onchange="sam()">
+            <option>O</option>
+        <option>A+</option>
+        <option>A</option>
+        <option>B+</option>
+        <option>B</option>
+        <option>RA-F</option>
+        </select>
+        <br>
+
+       Python Programming (20CS241) 
+        <select  id="sub13"onchange="sam()">
+        <option>O</option>
+        <option>A+</option>
+        <option>A</option>
+        <option>B+</option>
+        <option>B</option>
+        <option>RA-F</option>
+        </select>
+        <br>
+
+       Electric Circuits (20EC215) 
+        <select id="sub14"onchange="sam()">
+            <option>O</option>
+        <option>A+</option>
+        <option>A</option>
+        <option>B+</option>
+        <option>B</option>
+        <option>RA-F</option>
+        </select>
+        <br>
+
+        Chemistry Laboratory (20CH028) 
+        <select id="sub15"onchange="sam()">
+            <option>O</option>
+        <option>A+</option>
+        <option>A</option>
+        <option>B+</option>
+        <option>B</option>
+        <option>RA-F</option>
+        </select>
+        <br>
+
+        Python Laboratory (20CS227) 
+        <select  id="sub16"onchange="sam()">
+            <option>O</option>
+        <option>A+</option>
+        <option>A</option>
+        <option>B+</option>
+        <option>B</option>
+        <option>RA-F</option>
+        </select>
+        <br>
+
+       MP Lab (20GE028) 
+        <select id="sub17"onchange="sam()">
+            <option>O</option>
+        <option>A+</option>
+        <option>A</option>
+        <option>B+</option>
+        <option>B</option>
+        <option>RA-F</option>
+        </select>
+        <br>
+
+        ELectric Circuits Lab (20EC221) 
+        <select  id="sub18"onchange="sam()">
+            <option>O</option>
+        <option>A+</option>
+        <option>A</option>
+        <option>B+</option>
+        <option>B</option>
+        <option>RA-F</option>
+        </select>
+        <br>
+    </div>
+    <h3 id="res2">SGPA:</h3>
+    <h3 id="cgpa2">CGPA:</h3>
+   </div>
+   <br><br><br>
+    </div>
+   </div>
+   <div class="box3">
+    <h2>Semester 3</h2>
+    <div class="sem">
+       DE and NM (20MA342) 
+        <select  id="sub19"onchange="sam()">
+            <option>O</option>
+        <option>A+</option>
+        <option>A</option>
+        <option>B+</option>
+        <option>B</option>
+        <option>RA-F</option>
+        </select>
+        <br>
+        
+        C++ and DS (20CS332)
+        <select id="sub20"onchange="sam()">
+            <option>O</option>
+        <option>A+</option>
+        <option>A</option>
+        <option>B+</option>
+        <option>B</option>
+        <option>RA-F</option>
+        </select>
+        <br>
+
+       Electronic Devices (20EC311) 
+        <select  id="sub21"onchange="sam()">
+            <option>O</option>
+        <option>A+</option>
+        <option>A</option>
+        <option>B+</option>
+        <option>B</option>
+        <option>RA-F</option>
+        </select>
+        <br>
+
+        Digital Electronic (20EC312) 
+        <select id="sub22"onchange="sam()">
+        <option>O</option>
+        <option>A+</option>
+        <option>A</option>
+        <option>B+</option>
+        <option>B</option>
+        <option>RA-F</option>
+        </select>
+        <br>
+
+       Electromagnatic Theory (20EC313) 
+        <select id="sub23"onchange="sam()">
+            <option>O</option>
+        <option>A+</option>
+        <option>A</option>
+        <option>B+</option>
+        <option>B</option>
+        <option>RA-F</option>
+        </select>
+        <br>
+
+        Electrical Machines (20EE331) 
+        <select id="sub24"onchange="sam()">
+            <option>O</option>
+        <option>A+</option>
+        <option>A</option>
+        <option>B+</option>
+        <option>B</option>
+        <option>RA-F</option>
+        </select>
+        <br>
+
+        C++ and DS Laboratory (20CS326) 
+        <select  id="sub25"onchange="sam()">
+            <option>O</option>
+        <option>A+</option>
+        <option>A</option>
+        <option>B+</option>
+        <option>B</option>
+        <option>RA-F</option>
+        </select>
+        <br>
+
+       Electronic Devices Lab (20EC321) 
+        <select  id="sub26"onchange="sam()">
+            <option>O</option>
+        <option>A+</option>
+        <option>A</option>
+        <option>B+</option>
+        <option>B</option>
+        <option>RA-F</option>
+        </select>
+        <br>
+
+        Digital Electronics Lab (20EC322) 
+        <select id="sub27"onchange="sam()">
+            <option>O</option>
+        <option>A+</option>
+        <option>A</option>
+        <option>B+</option>
+        <optio>B</option>
+        <option>RA-F</option>
+        </select>
+        <br>
+        CDS-I (20HR351) 
+        <select id="sub28"onchange="sam()">
+            <option>O</option>
+        <option>A+</option>
+        <option>A</option>
+        <option>B+</option>
+        <option>B</option>
+        <option>RA-F</option>
+        </select>
+        <br>
+    </div>
+    <h3 id="res3">SGPA:</h3>
+    <h3 id="cgpa3">CGPA:</h3>
+   </div>
+   <br><br><br>
+   <div class="box4">
+    <h2>Semester 4</h2>
+    <div class="sem">
+      Probability And Stochastic Process (20MA433)
+        <select  id="sub29"onchange="sam()">
+            <option>O</option>
+        <option>A+</option>
+        <option>A</option>
+        <option>B+</option>
+        <option>B</option>
+        <optio>RA-F</option>
+        </select>
+        <br>
+        
+        Signals And Systems (20EC411)
+        <select  id="sub30"onchange="sam()">
+            <option>O</option>
+        <option>A+</option>
+        <option>A</option>
+        <option>B+</option>
+        <option>B</option>
+        <option>RA-F</option>
+        </select>
+        <br>
+
+       Electronic Circuits (20EC412) 
+        <select  id="sub31"onchange="sam()">
+            <option>O</option>
+        <option>A+</option>
+        <option>A</option>
+        <option>B+</option>
+        <option >B</option>
+        <option>RA-F</option>
+        </select>
+        <br>
+
+        Linear Integrated Circuits(20EC413) 
+        <select id="sub32"onchange="sam()">
+        <option>O</option>
+        <option>A+</option>
+        <option>A</option>
+        <option>B+</option>
+        <option>B</option>
+        <option>RA-F</option>
+        </select>
+        <br>
+
+      MPMC (20EC414) 
+        <select id="sub33"onchange="sam()">
+            <option>O</option>
+        <option>A+</option>
+        <option>A</option>
+        <option>B+</option>
+        <option>B</option>
+        <option>RA-F</option>
+        </select>
+        <br>
+        TLWG (20EC415) 
+        <select id="sub34"onchange="sam()">
+            <option>O</option>
+        <option>A+</option>
+        <option>A</option>
+        <option>B+</option>
+        <option>B</option>
+        <option>RA-F</option>
+        </select>
+        <br>
+
+        Electronic Circuits And Simulation Laboratory (20EC421) 
+        <select  id="sub35"onchange="sam()">
+            <option>O</option>
+        <option>A+</option>
+        <option>A</option>
+        <option>B+</option>
+        <option>B</option>
+        <option>RA-F</option>
+        </select>
+        <br>
+
+       Linear Integrated Circuits Lab (20EC422) 
+        <select  id="sub36"onchange="sam()">
+            <option>O</option>
+        <option>A+</option>
+        <option>A</option>
+        <option>B+</option>
+        <option>B</option>
+        <option>RA-F</option>
+        </select>
+        <br>
+
+        MPMC Lab (20EC423) 
+        <select  id="sub37"onchange="sam()">
+            <option>O</option>
+        <option>A+</option>
+        <option>A</option>
+        <option>B+</option>
+        <option>B</option>
+        <option>RA-F</option>
+        </select>
+        <br>
+        CDS-II (20HR442) 
+        <select  id="sub38"onchange="sam()">
+            <option>O</option>
+        <option>A+</option>
+        <option>A</option>
+        <option>B+</option>
+        <option>B</option>
+        <option>RA-F</option>
+        </select>
+        <br>
+    </div>
+    <h3 id="res4">SGPA:</h3>
+    <h3 id="cgpa4">CGPA:</h3>
+   </div>
+   <br><br><br>
+   <div class="box5">
+    <h2>Semester 5</h2>
+    <div class="sem">
+     Principles Of Management(20HS001)
+        <select  id="sub39"onchange="sam()">
+            <option>O</option>
+        <option>A+</option>
+        <option>A</option>
+        <option>B+</option>
+        <option>B</option>
+        <option>RA-F</option>
+        </select>
+        <br>
+        
+        Analog Communication Systems (20EC511)
+        <select  id="sub40"onchange="sam()">
+            <option>O</option>
+        <option>A+</option>
+        <option>A</option>
+        <option>B+</option>
+        <option>B</option>
+        <option>RA-F</option>
+        </select>
+        <br>
+
+       Digital Signal Processing (20EC512) 
+        <select  id="sub41"onchange="sam()">
+            <option>O</option>
+        <option>A+</option>
+        <option>A</option>
+        <option>B+</option>
+        <option>B</option>
+        <option>RA-F</option>
+        </select>
+        <br>
+
+        Computer Networks(20EC513) 
+        <select  id="sub42"onchange="sam()">
+        <option>O</option>
+        <option>A+</option>
+        <option>A</option>
+        <option>B+</option>
+        <option>B</option>
+        <option>RA-F</option>
+        </select>
+        <br>
+
+        Embedded Systems (20EC514) 
+        <select  id="sub43"onchange="sam()">
+            <option>O</option>
+        <option >A+</option>
+        <option>A</option>
+        <option>B+</option>
+        <option>B</option>
+        <option>RA-F</option>
+        </select>
+        <br>
+      Open Elective-I
+        <select id="sub44"onchange="sam()">
+            <option>O</option>
+        <option>A+</option>
+        <option>A</option>
+        <option>B+</option>
+        <option>B</option>
+        <option>RA-F</option>
+        </select>
+        <br>
+
+       Digital Signal Processing Laboratory (20EC521) 
+        <select  id="sub45"onchange="sam()">
+            <option>O</option>
+        <option>A+</option>
+        <option>A</option>
+        <option>B+</option>
+        <option>B</option>
+        <option>RA-F</option>
+        </select>
+        <br>
+
+       Computer Networks Lab (20EC522) 
+        <select  id="sub46"onchange="sam()">
+            <option>O</option>
+        <option>A+</option>
+        <option>A</option>
+        <option>B+</option>
+        <option>B</option>
+        <option>RA-F</option>
+        </select>
+        <br>
+
+        Embedded Systems Lab (20EC523) 
+        <select  id="sub47"onchange="sam()">
+            <option>O</option>
+        <option>A+</option>
+        <option>A</option>
+        <option>B+</option>
+        <option>B</option>
+        <option>RA-F</option>
+        </select>
+        <br>
+        CDS-III (20HR543) 
+        <select id="sub48"onchange="sam()">
+            <option>O</option>
+        <option>A+</option>
+        <option>A</option>
+        <option>B+</option>
+        <option>B</option>
+        <option>RA-F</option>
+        </select>
+        <br>
+    </div>
+    <h3 id="res5">SGPA:</h3>
+    <h3 id="cgpa5">CGPA:</h3>
+   </div>
+   <br><br><br>
+   <div class="box6">
+    <h2>Semester 6</h2>
+    <div class="sem">
+      Universal Human Values And Understanding Harmonics (20HS051)
+        <select id="sub49"onchange="sam()">
+            <option>O</option>
+        <option>A+</option>
+        <option>A</option>
+        <option>B+</option>
+        <option>B</option>
+        <option>RA-F</option>
+        </select>
+        <br>
+        
+        Digital Communication Systems (20EC611)
+        <select  id="sub50"onchange="sam()">
+            <option>O</option>
+        <option>A+</option>
+        <option>A</option>
+        <option>B+</option>
+        <option>B</option>
+        <option>RA-F</option>
+        </select>
+        <br>
+
+        Digital Image Processing (20EC612) 
+        <select  id="sub51"onchange="sam()">
+            <option>O</option>
+        <option>A+</option>
+        <option>A</option>
+        <option>B+</option>
+        <option>B</option>
+        <option>RA-F</option>
+        </select>
+        <br>
+
+         VLSI Design (20EC613) 
+        <select  id="sub52"onchange="sam()">
+        <option>O</option>
+        <option>A+</option>
+        <option>A</option>
+        <option>B+</option>
+        <option>B</option>
+        <option>RA-F</option>
+        </select>
+        <br>
+
+       Professional Elective-I 
+        <select  id="sub53"onchange="sam()">
+            <option>O</option>
+        <option>A+</option>
+        <option>A</option>
+        <option>B+</option>
+        <option>B</option>
+        <option>RA-F</option>
+        </select>
+        <br>
+        Open Elective-II
+        <select  id="sub54"onchange="sam()">
+            <option>O</option>
+        <option>A+</option>
+        <option>A</option>
+        <option>B+</option>
+        <option>B</option>
+        <option>RA-F</option>
+        </select>
+        <br>
+
+        Communication Systems Laboratory (20EC621) 
+        <select  id="sub55"onchange="sam()">
+            <option>O</option>
+        <option>A+</option>
+        <option>A</option>
+        <option>B+</option>
+        <option>B</option>
+        <option>RA-F</option>
+        </select>
+        <br>
+
+       VLSI Lab (20EC622) 
+        <select id="sub56"onchange="sam()">
+            <option>O</option>
+        <option>A+</option>
+        <option>A</option>
+        <option>B+</option>
+        <option>B</option>
+        <option>RA-F</option>
+        </select>
+        <br>
+
+        CDS-IV (20HR644) 
+        <select id="sub57"onchange="sam()">
+            <option>O</option>
+        <option>A+</option>
+        <option>A</option>
+        <option>B+</option>
+        <option>B</option>
+        <option>RA-F</option>
+        </select>
+        <br>
+    </div>
+    <h3 id="res6">SGPA:</h3>
+    <h3 id="cgpa6">CGPA:</h3>
+   </div>
+   <br><br><br>
+   <div class="box7">
+    <h2>Semester 7</h2>
+    <div class="sem">
+      Wireless And Cellular Communication (20EC711)
+        <select  id="sub58"onchange="sam()">
+            <option>O</option>
+        <option>A+</option>
+        <option>A</option>
+        <option>B+</option>
+        <option>B</option>
+        <option>RA-F</option>
+        </select>
+        <br>
+        
+        RF And Microwave Engineering (20EC712)
+        <select  id="sub59"onchange="sam()">
+            <option>O</option>
+        <option>A+</option>
+        <option>A</option>
+        <option>B+</option>
+        <option>B</option>
+        <option>RA-F</option>
+        </select>
+        <br>
+        Fiber Optical Communication (20EC713)
+        <select  id="sub60"onchange="sam()">
+            <option>O</option>
+        <option>A+</option>
+        <option>A</option>
+        <option>B+</option>
+        <option>B</option>
+        <option>RA-F</option>
+        </select>
+        <br>
+
+        Professional Elective-II 
+        <select id="sub61"onchange="sam()">
+        <option>O</option>
+        <option>A+</option>
+        <option>A</option>
+        <option>B+</option>
+        <option>B</option>
+        <option>RA-F</option>
+        </select>
+        <br>
+        Professional Elective-III
+        <select id="sub62"onchange="sam()">
+            <option>O</option>
+        <option>A+</option>
+        <option>A</option>
+        <option>B+</option>
+        <option>B</option>
+        <option>RA-F</option>
+        </select>
+        <br>
+        Open Elective-III 
+        <select  id="sub63"onchange="sam()">
+            <option>O</option>
+        <option>A+</option>
+        <option>A</option>
+        <option>B+</option>
+        <option>B</option>
+        <option>RA-F</option>
+        </select>
+        <br>
+
+        RF Optical And Microwave Laboratory (20EC721) 
+        <select id="sub64"onchange="sam()">
+            <option>O</option>
+        <option>A+</option>
+        <option>A</option>
+        <option>B+</option>
+        <option>B</option>
+        <option>RA-F</option>
+        </select>
+        <br>
+
+      Project Phase-I (20EC722)
+        <select  id="sub65"onchange="sam()">
+            <option>O</option>
+        <option>A+</option>
+        <option>A</option>
+        <option>B+</option>
+        <option>B</option>
+        <option>RA-F</option>
+        </select>
+        <br>
+    </div>
+    <h3 id="res7">SGPA:</h3>
+    <h3 id="cgpa7">CGPA:</h3>
+   </div>
+   <br><br><br>
+   <div class="box8">
+    <h2>Semester 8</h2>
+    <div class="sem">
+     Professional Elective-IV
+        <select  id="sub66"onchange="sam()">
+            <option>O</option>
+        <option>A+</option>
+        <option>A</option>
+        <option>B+</option>
+        <option>B</option>
+        <option>RA-F</option>
+        </select>
+        <br>
+        
+        Professional Elective-V
+        <select id="sub67"onchange="sam()">
+            <option>O</option>
+        <option>A+</option>
+        <option>A</option>
+        <option>B+</option>
+        <option>B</option>
+        <option>RA-F</option>
+        </select>
+        <br>
+        Open Elective-IV
+        <select id="sub68"onchange="sam()">
+            <option>O</option>
+        <option>A+</option>
+        <option>A</option>
+        <option>B+</option>
+        <option>B</option>
+        <option>RA-F</option>
+        </select>
+        <br>
+
+        Project Work Phase-II 
+        <select  id="sub69"onchange="sam()">
+        <option>O</option>
+        <option>A+</option>
+        <option>A</option>
+        <option>B+</option>
+        <option>B</option>
+        <option>RA-F</option>
+        </select>
+        <br>
+    </div>
+    <h3 id="res8">SGPA:</h3>
+    <h3 id="cgpa8">CGPA:</h3>
+   </div>
+   <br><br><br>
+   <div class="bc"><a href="login_reg.html"> <ion-icon name="arrow-back-outline"></ion-icon></a></div>
+   <div class="reload"><a href="calc_2020.html"><ion-icon name="refresh-circle-outline"></ion-icon></a></div>
+</div>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="calc_20.js"></script>
+</body>
+</html>

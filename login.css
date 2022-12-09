@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.bg-img{
+    background: url(https://wallpaperaccess.com/full/431759.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+  }
+  .bg-img:after{
+    position: absolute;
+    content: ''; 
+    top: 0;
+    left: 0;
+    height: -50%;
+    width: 100%;
+    background: rgba(0,0,0,0.7);
+  }
+.login-form{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    z-index: 999;
+    text-align: center;
+    padding: 20px 15px;
+    width: 370px;
+    overflow: hidden;
+    transform: translate(-50%,-50%);
+    background: hsla(0, 100%, 1%, 0.973);
+    box-shadow: -1px 4px 28px 0px rgba(0, 0, 0, 0.744);
+}
+
+.login-form h1{
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 40px 0;
+    color: #ebe7ed;   
+}
+
+.login-form p{
+    font-size: 20px;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.login-form input{
+    font-size: 16px;
+    width: 100%;
+    padding: 15px 10px;
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+}
+
+.login-form button{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 0;
+    padding: 20px 20px;
+    width: 50%;
+    border-radius: 50px;
+    border: 0;
+    background-color:  hwb(246 3% 3% / 0.661);
+}
+.login-form button:hover{
+   background-color:  whitesmoke;
+}
+.login-form a{
+    text-decoration: none;
+    color: rgb(20, 252, 4);
+}
+.login-form a:hover{
+   color: black;
+}
+.login-form .b{
+    color:yellow ;
+}
+.login-form .b:hover{
+    color: black;
+}
+.head1{
+    text-align: center;
+    color:black;
+    font-size: 40px;
+    background-color: white;
+}
+@media only screen and (max-width:600) 
+ {
+    .head1
+    {
+        font-size: 10px;
+    }
+}
+.bc a{
+    font-size:50px;
+    color: rgb(250, 42, 5);
+    }
+    .bc {
+        position: fixed;
+        top: 0;
+        color: black;
+        left:0;
+        font-size :25px;
+        text-decoration: none;
+    }
+    .bc a:hover{
+        text-decoration: line-through;
+        color: hsl(300, 100%, 2%);
+    }
+    
+/* 
+.login-form::before{
+    content: ' ';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg,transparent,#f44e07,#f44e07);
+    transform-origin: bottom right ; 
+    animation: animate 6s linear infinite;
+}
+
+.login-form::after{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg,transparent,blue,blue);
+    transform-origin: bottom right ;
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+}
+
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.form{
+    position: absolute;
+    inset: 10px;
+    border-radius: 8px;
+    background:transparent;
+    z-index: 10;
+   padding: 50px 40px;
+   display: flex; 
+   flex-direction: column;
+} */

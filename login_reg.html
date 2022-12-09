@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="login.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student's Book</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+    <link rel="icon" href="http://ksrce.ac.in/admin/file_manager/source/ENGGOCOLLBUILD_1.JPG?1480075992142">
+</head>
+<body>
+    <div class="bg-img">
+        <p class="head1">Choose Your Regulation</p>
+        <div class="login-form">
+            <h1>Login Form</h1>
+           <div class="form"></div>
+           <div class="a">
+            <button class="b" onclick="login()">Regulation_2018</button>
+               <br>
+               </div>
+               <div class="a">
+                <button class="b" onclick="login1()">Regulation_2020</button>
+                <br> 
+            </div>
+            <!-- <form action="calc_2018.html"> -->
+                <div id="log" style="display: none;"><br>
+                    <input id="name1" type="text" placeholder="Username " style="width:250px;"><br>
+                    <button id="bt" type="button" class="btn btn-info mt-2 align-items-center" >Login</button>  
+                 </div>
+            <!-- </form> -->
+           
+             <div id="log1" style="display: none;"><br>
+                <input id="name2" type="text" placeholder="Username " style="width:250px;"><br>
+                <button id="btn" type="button" class="btn btn-danger mt-2 align-items-center">Login</button>  
+             </div>
+        </div> 
+        <div class="bc"><a href="index.html"> <ion-icon name="arrow-back-outline"></ion-icon></a></div>
+        <script src="login_res.js"></script> 
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+        <!---->
+        <script type="module">
+            // Import the functions you need from the SDKs you need
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-app.js";
+            import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-analytics.js";
+        
+            const firebaseConfig = {
+              apiKey: "AIzaSyDQuDKgXeHtHNr_hoVzBYgSY0cFN-mbBcQ",
+              authDomain: "student-s-book-b28d8.firebaseapp.com",
+              projectId: "student-s-book-b28d8",
+              storageBucket: "student-s-book-b28d8.appspot.com",
+              messagingSenderId: "296417849812",
+              appId: "1:296417849812:web:25f189f327e4a6fc5ba641",
+              measurementId: "G-C5DRSWPVFH"
+            };
+            const app=initializeApp(firebaseConfig);
+             const analytics = getAnalytics(app);
+            import {getDatabase, get,ref,child, set }
+             from "https://www.gstatic.com/firebasejs/9.13.0/firebase-database.js";
+            const db=getDatabase(app);
+                const name=document.getElementById('name1');
+                const submit=document.getElementById('bt');
+                function Validation(){
+                    let ns=/^[a-zA-Z\s]+$/;
+    
+                    if(!ns.test(name.value)){
+                        alert("Enter Valid Name");
+                        return false;
+                    }   
+                    return true;  
+                }
+                function regisUser(){
+                    if(!Validation()){
+                        return false;
+                    };
+                    const dbRef=ref(db);
+                     set(ref(db,"UsersList_2018/" +name.value),
+                   {
+                    Name:name.value
+                    })
+                     alert('Welcome');
+                     window.open("calc_2018.html");
+                     setTimeout();
+               }    
+             submit.addEventListener('click',regisUser);  
+             const nam=document.getElementById('name2');
+             const sub=document.getElementById('btn');
+             function Validation1(){
+                    let ns1=/^[a-zA-Z\s]+$/;
+    
+                    if(!ns1.test(nam.value)){
+                        alert("Enter Valid Name");
+                        return false;
+                    }   
+                    return true;  
+                }
+                function regisUser1(){
+                    if(!Validation1()){
+                        return false;
+                    };
+                    const dbRef1=ref(db);
+                     set(ref(db,"UsersList_2020/" +nam.value),
+                   {
+                    Name:nam.value
+                    })
+                     alert('Welcome');
+                     window.open("calc_2020.html");
+                    setTimeout();  
+               }    
+                  sub.addEventListener('click',regisUser1);  
+                  setTimeout(() => {
+                   document.location.reload();
+                    }, 15000);
+          </script>
+    </div>
+</body>
+</html>
